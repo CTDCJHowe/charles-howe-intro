@@ -1,0 +1,67 @@
+body {
+    background-color: #3a318a;
+    color: #bfa1d8;   
+    margin: 30px;
+    border-style: groove;
+    border-width: 25px;
+    border-color: #356333;
+    padding: 20px;
+}
+
+h1 {
+    color:#dddd00;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#Connect {
+    text-align: left;
+    padding: 30px 10px 10px 10px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #FFF780;
+}
+
+a {
+    color: #fcfbf6;
+}
+
+.expcolumn {
+    font-size: 20px;
+    color: #e06f6f;
+}
+
+.connectcolumns {
+    font-size: 20px;
+    color: #FFF780;
+    margin: 10px;
+}
+
+.columns {
+    display: flex;
+} 
+
+.column {
+    padding: 5px;
+    margin: 5px;
+}
+
+.navrows {
+    margin: 10px;
+    color: #000000;
+}
+
+#About {
+    text-align: center;
+    margin: 40px;
+}
