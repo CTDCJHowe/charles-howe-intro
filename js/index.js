@@ -22,7 +22,7 @@ const skillsSection = document.getElementById('Skills');
 const skillsList = skillsSection.getElementsByTagName('ul');
 
 for (let i = 0; i < skills.length; i++) {
-    const skillItem = document.createElement('LI');
+    const skillItem = document.createElement('li');
     skillItem.innerText = skills[i];
     skillsList[0].appendChild(skillItem);
 };
