@@ -65,3 +65,11 @@ a {
     text-align: center;
     margin: 40px;
 }
+
+#skillsList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 20px;
+    color: #FFF780;
+}
