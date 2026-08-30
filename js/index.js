@@ -27,3 +27,38 @@ for (let i = 0; i < skills.length; i++) {
     skillsList[0].appendChild(skillItem);
 };
 
+const messageForm = document.querySelector('[name="leave_message"]');
+
+messageForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const userName = event.target.usersName.value;
+  const userEmail = event.target.usersEmail.value;
+  const userMessage = event.target.usersMessage.value;
+
+  console.log(userName, userEmail, userMessage);
+
+ 
+  const messageSection = document.getElementById('messages');
+  const messageList = messageSection.querySelector('ul');
+
+  
+  const newMessage = document.createElement('li');
+  newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span>${userMessage}</span>`;
+
+  
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'remove';
+  removeButton.type = 'button';
+
+  
+  removeButton.addEventListener('click', function() {
+    const entry = removeButton.parentNode;
+    entry.remove();
+  });
+
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+
+  event.target.reset();
+});

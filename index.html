@@ -30,6 +30,10 @@
                     <a class="navrow" href="#Connect">
                         <h3>Connect</h3>
                     </a>
+                    <!-- column 6 -->
+                    <a class="navrow" href="#leave-a-message">
+                        <h3>Leave a Message</h3>
+                    </a>
                 </div> <!-- navcolumns -->
             </nav>
         </header>
@@ -96,8 +100,29 @@
                     <p><a href="https://github.com/CTDCJHowe?tab=repositories">GitHub</a></p>
                 </div>
         </div>
-
         </section>
+
+        <section id="leave-a-message">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="usersName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="usersEmail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="usersMessage" required></textarea>
+
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+        </section>
+
            <script src="js/index.js"></script> 
     </body>
 </html>

@@ -1,6 +1,6 @@
 body {
-    background-color: #3a318a;
-    color: #bfa1d8;   
+    background-color: #dad2bc;
+    color: #252323;   
     margin: 30px;
     border-style: groove;
     border-width: 25px;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    color:#dddd00;
+    color:#252323;
     text-align: center;
     font-size: 40px;
     padding: 20px;
@@ -29,11 +29,11 @@ h2 {
 
 p {
     font-size: 18px;
-    color: #FFF780;
+    color: #252323;
 }
 
 a {
-    color: #fcfbf6;
+    color: #252323;
 }
 
 .expcolumn {
@@ -43,7 +43,7 @@ a {
 
 .connectcolumns {
     font-size: 20px;
-    color: #FFF780;
+    color: #70798c;
     margin: 10px;
 }
 
@@ -71,5 +71,76 @@ a {
     flex-direction: column;
     list-style-type: none;
     font-size: 20px;
-    color: #FFF780;
+    color: #252323;
+}
+
+
+/* Form Section */
+#leave-a-message {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#leave-a-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#leave-a-message label {
+  font-weight: bold;
+  color: #252323;
+}
+
+
+#leave-a-message input,
+#leave-a-message textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+#leave-a-message textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+#leave-a-message button[type="submit"] {
+  min-height: 44px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: darkolivegreen;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+/* Messages List Section */
+#messages {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+#messages li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+#messages li button {
+  min-height: 36px;
+  padding: 6px 12px;
+  background-color: #cc4b37;
+  color: #ffffff;
 }
