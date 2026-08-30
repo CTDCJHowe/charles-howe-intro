@@ -29,32 +29,36 @@ for (let i = 0; i < skills.length; i++) {
 
 const messageForm = document.querySelector('[name="leave_message"]');
 
-
 messageForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const userName = event.target.usersName.value;
-    const userEmail = event.target.usersEmail.value;
-    const userMessage = event.target.usersMessage.value;
+  const userName = event.target.usersName.value;
+  const userEmail = event.target.usersEmail.value;
+  const userMessage = event.target.usersMessage.value;
 
-    console.log(userName, userEmail, userMessage);
+  console.log(userName, userEmail, userMessage);
 
-    event.target.reset();
+ 
+  const messageSection = document.getElementById('messages');
+  const messageList = messageSection.querySelector('ul');
 
-    const messageSection = document.getElementByID('messages');
-    const messageList = messageSection.querySelector('ul');
-    const newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span>${userMessage}</span>`;
-    const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
-    removeButton.type = 'button';
+  
+  const newMessage = document.createElement('li');
+  newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span>${userMessage}</span>`;
 
-    removeButton.addEventListener('click', function() {
-        const entry = removeButton.parentNode;
-        entry.remove()
-    });
+  
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'remove';
+  removeButton.type = 'button';
 
-    newMessage.appendChild(removeButton);
-    messageList.appendChild(newMessage);
-    event.target.reset();
+  
+  removeButton.addEventListener('click', function() {
+    const entry = removeButton.parentNode;
+    entry.remove();
+  });
+
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+
+  event.target.reset();
 });
