@@ -1,6 +1,6 @@
 body {
-    background-color: #3a318a;
-    color: #bfa1d8;   
+    background-color: #dad2bc;
+    color: #252323;   
     margin: 30px;
     border-style: groove;
     border-width: 25px;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    color:#dddd00;
+    color:#252323;
     text-align: center;
     font-size: 40px;
     padding: 20px;
@@ -29,11 +29,11 @@ h2 {
 
 p {
     font-size: 18px;
-    color: #FFF780;
+    color: #252323;
 }
 
 a {
-    color: #fcfbf6;
+    color: #252323;
 }
 
 .expcolumn {
@@ -43,7 +43,7 @@ a {
 
 .connectcolumns {
     font-size: 20px;
-    color: #FFF780;
+    color: #70798c;
     margin: 10px;
 }
 
@@ -71,5 +71,23 @@ a {
     flex-direction: column;
     list-style-type: none;
     font-size: 20px;
-    color: #FFF780;
+    color: #252323;
+}
+
+#Leave_a_Message {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 45px;
+    color: #252323;
+    font-size: 20px;
+    text-align: center;
+}
+
+#messageTitle {
+    text-align: left;
+    margin: 50px;
+    padding: 30px;
+    font-size: 30px;
+    color: darkolivegreen;
 }
