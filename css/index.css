@@ -74,20 +74,22 @@ a {
     color: #252323;
 }
 
-#Leave_a_Message {
-    display: flex;
-    flex-direction: column;
+
+#messages {
     max-width: 300px;
-    margin: 45px;
-    color: #252323;
-    font-size: 20px;
+    margin: 50px auto;
     text-align: center;
 }
 
 #messageTitle {
-    text-align: left;
-    margin: 50px;
-    padding: 30px;
-    font-size: 30px;
     color: darkolivegreen;
+    margin: 20px 0 10px;
+}
+
+
+#Leave_a_Message {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
 }
