@@ -65,18 +65,22 @@ messageForm.addEventListener('submit', function(event) {
 
 let repositories;
 
-fetch('https://api.github.com/users/CTDHowe/repos')
+fetch('https://api.github.com/users/CTDCJHowe/repos')
   .then(response => response.json())
   .then(data => {
     repositories = data;
-    const projectSection = document.getElementById('projects');
-    const projectList = projectSection.querySelector('ul');})
-    .catch(error => console.error("Error: Project Section Empty", error));
+
+    const projectSection = document.getElementById('Projects');
+    const projectList = projectSection.querySelector('ul');
+
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement('li');
-      const projectLink = document.createElement('a');
-      project.appendChild(projectLink);
-      projectLink.appendChild(project);
-    
-  }
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error: Project Section Empty", error);
+  });
+  
   

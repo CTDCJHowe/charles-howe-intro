@@ -144,3 +144,9 @@ a {
   background-color: #cc4b37;
   color: #ffffff;
 }
+
+#Projects ul {
+    text-align: left;
+    margin: 40px;
+    font-size: 20px;
+}
