@@ -62,3 +62,25 @@ messageForm.addEventListener('submit', function(event) {
 
   event.target.reset();
 });
+
+let repositories;
+
+fetch('https://api.github.com/users/CTDCJHowe/repos')
+  .then(response => response.json())
+  .then(data => {
+    repositories = data;
+
+    const projectSection = document.getElementById('Projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error: Project Section Empty", error);
+  });
+  
+  
