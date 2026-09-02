@@ -62,3 +62,21 @@ messageForm.addEventListener('submit', function(event) {
 
   event.target.reset();
 });
+
+let repositories;
+
+fetch('https://api.github.com/users/CTDHowe/repos')
+  .then(response => response.json())
+  .then(data => {
+    repositories = data;
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');})
+    .catch(error => console.error("Error: Project Section Empty", error));
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      const projectLink = document.createElement('a');
+      project.appendChild(projectLink);
+      projectLink.appendChild(project);
+    
+  }
+  
