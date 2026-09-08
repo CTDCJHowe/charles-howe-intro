@@ -82,5 +82,3 @@ fetch('https://api.github.com/users/CTDCJHowe/repos')
   .catch(error => {
     console.error("Error: Project Section Empty", error);
   });
-  
-  
