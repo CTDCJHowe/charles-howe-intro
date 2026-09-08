@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: #f3efe6;
+	color: #252323;
+	font-family: Georgia, 'Times New Roman', serif;
+	line-height: 1.5;
+}
+
+.site-header {
+	padding: 32px 20px 24px;
+	background: #356333;
+	color: #fffdf7;
+	text-align: center;
+}
+
+.site-header nav {
+	max-width: 760px;
+	margin: 0 auto 36px;
+	text-align: left;
+}
+
+.site-header a {
+	color: #fffdf7;
+	font-weight: bold;
+}
+
+h1,
+h2 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: clamp(2.25rem, 7vw, 4rem);
+	margin-bottom: 8px;
+}
+
+.site-header p {
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+main {
+	width: min(760px, calc(100% - 40px));
+	margin: 36px auto;
+}
+
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+button {
+	border: 2px solid #252323;
+	border-radius: 4px;
+	padding: 12px 18px;
+	background: #e06f6f;
+	color: #252323;
+	cursor: pointer;
+	font: inherit;
+	font-weight: bold;
+}
+
+button:hover,
+button:focus-visible {
+	background: #f29b7b;
+}
+
+#status {
+	min-height: 1.5em;
+	font-weight: bold;
+}
+
+.data-view {
+	padding: 24px;
+	border: 2px solid #356333;
+	background: #fffdf7;
+}
+
+.data-view h2 {
+	color: #356333;
+}
+
+#dog-image {
+	display: block;
+	width: min(100%, 520px);
+	max-height: 520px;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+#breeds-list {
+	columns: 2 220px;
+	padding-left: 24px;
+}
+
+@media (max-width: 520px) {
+	.controls button {
+		width: 100%;
+	}
+
+	.data-view {
+		padding: 18px;
+	}
+}
