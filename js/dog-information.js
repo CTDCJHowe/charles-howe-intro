@@ -1,3 +1,4 @@
+// page controls and response containers for the API interactions.
 const imageButton = document.getElementById('image-button');
 const breedsButton = document.getElementById('breeds-button');
 const imageView = document.getElementById('image-view');
@@ -16,6 +17,7 @@ function showView(viewToShow) {
 	breedsView.hidden = showingImage;
 }
 
+// Request and display one random dog image.
 async function loadRandomDog() {
 	showView(imageView);
 	showStatus('Loading a random dog...');
@@ -38,6 +40,7 @@ async function loadRandomDog() {
 	}
 }
 
+// Request and display the available dog breeds.
 async function loadBreeds() {
 	showView(breedsView);
 	showStatus('Loading dog breeds...');

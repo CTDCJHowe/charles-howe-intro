@@ -1,7 +1,8 @@
+/* Base portfolio page styling. */
 body {
     background-color: #dad2bc;
     color: #252323;   
-    margin: 30px;
+    margin: 30px 110px;
     border-style: groove;
     border-width: 25px;
     border-color: #356333;
@@ -21,10 +22,15 @@ h2 {
     padding: 20px;
 }
 
+/* Connect heading and links aligned on the left. */
 #Connect {
     text-align: left;
     padding: 30px 10px 10px 10px;
     font-size: 20px;
+}
+
+#Connect h2 {
+  text-align: left;
 }
 
 p {
@@ -41,10 +47,35 @@ a {
     color: #e06f6f;
 }
 
+/* Places experience items side by side. */
+.experiencecolumns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.expcolumn {
+  flex: 1 1 250px;
+}
+
+/* Stack profile links beneath the Connect heading. */
 .connectcolumns {
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0;
     font-size: 20px;
     color: #70798c;
-    margin: 10px;
+    margin: 10px 0;
+}
+
+.connectcolumn {
+  flex: 0 0 auto;
+}
+
+#Connect p {
+  margin: 4px 0;
 }
 
 .columns {
@@ -63,7 +94,12 @@ a {
 
 #About {
     text-align: center;
-    margin: 40px;
+  margin: 40px 200px;
+}
+
+#About p {
+    line-height: 1.7;
+    margin: 16px 0;
 }
 
 #skillsList {
