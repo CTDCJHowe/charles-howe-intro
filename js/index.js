@@ -1,10 +1,9 @@
-// Add footer element
+// Create footer and insert the current copyright year.
 const newFooter = document.createElement('footer');
 newFooter.className = 'footer';
 document.body.append(newFooter);
 console.log(newFooter);
 
-// Insert copyright text in footer
 const today = new Date();
 const thisYear = today.getFullYear();
 
@@ -16,6 +15,7 @@ let copyrightMessage = `${copyrightSymbol} Charles Howe ${thisYear}`;
 copyright.innerText = copyrightMessage;
 footer.appendChild(copyright);
 
+// portfolio skills from written array.
 const skills = ['JavaScript', 'HTML', 'CSS', 'Computer Hardware Knowledge'];
 
 const skillsSection = document.getElementById('Skills');
@@ -27,6 +27,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList[0].appendChild(skillItem);
 };
 
+// Add messages and support to remove each entry.
 const messageForm = document.querySelector('[name="leave_message"]');
 
 messageForm.addEventListener('submit', function(event) {
